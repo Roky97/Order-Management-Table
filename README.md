@@ -1,12 +1,40 @@
-# React + Vite
+# Orders Management Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements an Orders Management Table using React, Vite, and AG Grid. It displays trading orders with interactive features and a dark theme.
 
-Currently, two official plugins are available:
+## Features
+- AG Grid Community Edition for the main table and child orders table
+- Infinite scroll (no pagination)
+- Row selection (select row on cell click)
+- Child orders display for selected parent order
+- Overflow action menu per row
+- CSV export button
+- "Create order" button (UI only)
+- Color-coded status badges and side colors
+- Responsive dark theme
+- Static sample data (no backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Expanding the ESLint configuration
+## Assumptions
+- All data is static and loaded from a local file.
+- Child orders are shown below the selected parent order.
+- Overflow menu options are placeholders.
+- No backend/API integration.
+- Focus is on AG Grid features and dark theme and a custum action menu higly reusable well integrated with AG Grid APIs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Libraries Used
+- React
+- Vite
+- AG Grid Community Edition
+- Styling with styled-components and MUI
+
